@@ -45,14 +45,16 @@ const fs = require('fs'),
 
                                 // Directories are object properties on the tree.
                                 branch[file] = {};
-                                console.log('cur dir name', file);
+                                // console.log('cur dir name', file);
                                 // Recurse into the directory.
                                 // only recurse into these directories
+                                console.log("checking for good directories");
                                 if (file == "docroot" || file == "editor" || file == "account" || 
                                     file == "edu" || file == "modules" || file == "community" || file == "themes" || 
                                     file == "custom" || file == "blockscad" || file == "src" || file == "account") 
                                 // if (file == "config")
                                 {
+                                    console.log("building a branch");
                                     buildBranch(filePath, branch[file]);                                    
                                 }
 
