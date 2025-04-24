@@ -48,13 +48,13 @@ const fs = require('fs'),
                                 // console.log('cur dir name', file);
                                 // Recurse into the directory.
                                 // only recurse into these directories
-                                console.log("checking for good directories");
+                                // console.log("checking for good directories");
                                 if (file == "docroot" || file == "editor" || file == "account" || 
                                     file == "edu" || file == "modules" || file == "community" || file == "themes" || 
                                     file == "custom" || file == "blockscad" || file == "src" || file == "account") 
                                 // if (file == "config")
                                 {
-                                    console.log("building a branch");
+                                    // console.log("building a branch");
                                     buildBranch(filePath, branch[file]);                                    
                                 }
 
