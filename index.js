@@ -24,6 +24,7 @@ const main = () => {
     let output = directoryName(dir);
 
     const parseResult = result => {
+        console.log("in parseResult");
         indentation++;
         Object.keys(result).sort().forEach(key => {
             const data = result[key];
