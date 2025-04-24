@@ -45,7 +45,7 @@ const fs = require('fs'),
 
                                 // Directories are object properties on the tree.
                                 branch[file] = {};
-                                //console.log('cur dir name', file);
+                                console.log('cur dir name', file);
                                 // Recurse into the directory.
                                 // only recurse into these directories
                                 if (file == "docroot" || file == "editor" || file == "account" || 
