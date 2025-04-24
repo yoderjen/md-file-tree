@@ -1,10 +1,10 @@
 {
-  "name": "md-file-tree",
+  "name": "file-tree",
   "version": "0.2.0",
   "author": "Michał Budzyński <michal@virtualdesign.pl>",
-  "repository": "git@github.com:michalbe/md-file-tree.git",
+  "repository": "git@github.com:yoderjen/md-file-tree.git",
   "bin": {
-    "md-file-tree": "./index.js"
+    "file-tree": "./index.js"
   },
   "scripts": {
     "lint": "jshint ."
