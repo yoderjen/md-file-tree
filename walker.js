@@ -48,9 +48,11 @@ const fs = require('fs'),
                                 console.log('cur dir name', file);
                                 // Recurse into the directory.
                                 // only recurse into these directories
-                                if (file == "docroot" || file == "editor" || file == "account" || 
-                                    file == "edu" || file == "modules" || file == "community" || file == "themes" || 
-                                    file == "custom" || file == "blockscad" || file == "src" || file == "account") {
+                                // if (file == "docroot" || file == "editor" || file == "account" || 
+                                //     file == "edu" || file == "modules" || file == "community" || file == "themes" || 
+                                //     file == "custom" || file == "blockscad" || file == "src" || file == "account") 
+                                if (file == "config")
+                                {
                                     buildBranch(filePath, branch[file]);                                    
                                 }
 
