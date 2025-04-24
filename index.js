@@ -17,6 +17,7 @@ const addIndentation = i => {
 };
 
 const main = () => {
+    console.log("start of main");
     const dirPath = process.cwd();
     const dir = dirPath.split('/').pop();
 
@@ -39,7 +40,9 @@ const main = () => {
         });
     };
 
-    dirTree(dirPath, (err, result) => {
+    console.log("in main");
+
+    tree(dirPath, (err, result) => {
         console.log("in tree");
         parseResult(result);
         console.log(output);
