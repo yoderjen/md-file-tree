@@ -39,7 +39,8 @@ const main = () => {
         });
     };
 
-    tree(dirPath, (err, result) => {
+    dirTree(dirPath, (err, result) => {
+        console.log("in tree");
         parseResult(result);
         console.log(output);
     });
