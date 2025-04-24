@@ -47,7 +47,13 @@ const fs = require('fs'),
                                 branch[file] = {};
                                 //console.log('cur dir name', file);
                                 // Recurse into the directory.
-                                buildBranch(filePath, branch[file]);
+                                // only recurse into these directories
+                                if (file == "docroot" || file == "editor" || file == "account" || 
+                                    file == "edu" || file == "modules" || file == "community" || file == "themes" || 
+                                    file == "custom" || file == "blockscad" || file == "src" || file == "account") {
+                                    buildBranch(filePath, branch[file]);                                    
+                                }
+
                             } else {
                                 const fp = filePath.replace(process.cwd(), '');
                                 //console.log(dir, file);
